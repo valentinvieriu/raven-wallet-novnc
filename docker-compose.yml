@@ -1,0 +1,33 @@
+version: '2.3'
+services:
+  raven-wallet:
+    image: ${IMAGE_REPO}:${IMAGE_VERSION}
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      args:
+        UBUNTU_IMAGE: 'ubuntu:${UBUNTU_VERSION}'
+        UBUNTU_MIRROR: ${UBUNTU_MIRROR}
+        NOVNC_VERSION: ${NOVNC_VERSION}
+        WEBSOCKIFY_VERSION: ${WEBSOCKIFY_VERSION}
+        TIGERVNC_VERSION: ${TIGERVNC_VERSION}
+        HOST_USER: ${HOST_USER}
+        HOST_PASSWORD: ${HOST_PASSWORD}
+        HOST_USER_UID: ${HOST_USER_UID}
+        HOST_USER_GID: ${HOST_USER_GID}
+        RAVEN_VERSION: ${RAVEN_VERSION}                          
+    restart: unless-stopped
+    environment: 
+        HOST_USER: ${HOST_USER}
+        HOST_PASSWORD: ${HOST_PASSWORD}      
+        SSL_PORT: ${SSL_PORT}  
+        VNC_PW: ${VNC_PW}
+    ports: 
+      # - '5901:5901'
+      - '6901:6901'
+      # - '8767:8767'
+      # - '18770:18770'
+      # - '8766:8766'
+      # - '18766:18766'
+    volumes:
+      - './data:/raven'

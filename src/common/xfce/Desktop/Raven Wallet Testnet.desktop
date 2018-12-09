@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Raven Wallet Testnet
+Exec=raven-qt -testnet -datadir=/raven/testnet  -server=0 -rest=0 -printtoconsole=1
+Icon=apport
+Path=
+Terminal=false
+StartupNotify=false
+Comment=Debug RavenCoin using Testnet

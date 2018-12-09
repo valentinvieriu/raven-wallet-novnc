@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Raven Wallet Main Net
+Exec=raven-qt -datadir=/raven/mainnet  -server=0 -rest=0 -printtoconsole=1
+Icon=system-software-update
+Path=
+Terminal=false
+StartupNotify=false
+Comment=RavenCoin Wallet
