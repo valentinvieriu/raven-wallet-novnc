@@ -1,7 +1,7 @@
 version: '2.3'
 services:
   raven-wallet:
-    image: ${IMAGE_REPO}:${IMAGE_VERSION}
+    image: ${IMAGE_REPO}:${RAVEN_VERSION}
     build:
       context: .
       dockerfile: ./Dockerfile

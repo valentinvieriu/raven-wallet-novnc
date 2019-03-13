@@ -48,7 +48,7 @@ If yuo have issues with the permission, please make sure that you use the env va
 
 Donations are welcomed: 
 
-[RKfFZsiM8MpWxtbvyNSE1MHFWA54epCJxT](https://ravencoin.network/address/RKfFZsiM8MpWxtbvyNSE1MHFWA54epCJxT)
+[RXYFRSyQY5xF8a2dooYwT43zxYwmj5ChYD](https://ravencoin.network/address/RXYFRSyQY5xF8a2dooYwT43zxYwmj5ChYD)
 
 ## Contributors
 
